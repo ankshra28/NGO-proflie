@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body,#root{
+    width:100%;
+    min-height:100vh;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.navbar{
+    width:100%;
+}
+
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav{
+    width:100%;
+    padding:10px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.listOfNavMenu{
+    display:flex;
+    gap:20px;
+    align-items:center;
+} 
+
+.hrFaded{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:0;
+}
+
+.homeNav{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+
+    z-index:100;
+    background-color: transparent;
+}
+.loginAndRegister{
+    display:flex;
+    
+    gap: 15px;
+}
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color:white;
+    cursor: pointer;
+  }
+
+   .dropdown {
+    width: 100%;
+  }
+.dropdownMenu {
+    left:-20px;
+    background: rgba(26, 17, 17, 0.974);
+    color: white;
+    box-shadow: none;
+    z-index:200px;
+    width:260px;
+    max-height: 300px;
+    overflow: scroll;
+  }
+
+
+ .dropdownItem:hover{
+    background-color: rgba(0, 0, 0, 0.947);
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+@media (max-width: 768px) {}
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+    
+    .nav{
+    
+    padding-left:.5%;
+    padding-top:.5%;
+    padding-right:1%;
+    display:flex;
+    align-items:center;
+    
+    justify-content: space-between;
+  }
+  
+  .listOfNavMenu{
+    background-color: transparent;
+    display:flex;
+    
+    gap: 20px;
+    
+    justify-content: space-around;
+}
+
+.listOfNavMenu a{
+    color:rgb(9, 38, 54);
+    background-color:transparent;
+    text-decoration: none;
+    
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.listOfNavMenu a:hover{
+    
+    color: rgb(75, 196, 181);
+    
+}
+
+.loginAndRegister{
+    display:flex;
+    gap: 10px;
+}
+.register{
+    border-radius: 10px;
+    
+}
+
+.login{
+
+    border-radius: 10px;
+    
+}
+
+.register:active{
+    border:.5px solid rgb(51, 124, 201);
+    background-color: rgb(51, 124, 201);
+}
+
+.login:active{
+    background-color:rgb(51, 124, 201) ;
+    border:.5px solid rgb(51, 124, 201);
+    
+}
+
+.navMenu {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  border-bottom: 3px solid white;
+}
+
+.active:hover{
+    border-bottom: 3px solid rgb(75, 196, 181);
+
+}
+
+.hrFaded{
+    height:2px;
+    border:none;
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(255,255,255,1) 50%,
+        rgba(255,255,255,1) 50%,
+        transparent 95%
+
+    )
+}
+
+.homeNav{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+
+    z-index:100;
+    background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  color: black;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background: #f0f0f0;
+}
+
+.dropdownTitle{
+    color:white;
+    background-color:transparent;
+    text-decoration: none;
+    
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.dropdownTitle:hover{
+    color: rgb(75, 196, 181);
+    
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color:black;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .listOfNavMenu {
+    display: none;
+  }
+
+  .listOfNavMenu.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    top: 60px;
+    right: 0;
+    
+    width: 200px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    
+    z-index: 2000;
+  } 
+
+  .closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .listOfNavMenu a {
+    color: white;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdownMenu {
+    left:-20px;
+    background: rgba(26, 17, 17, 0.974);
+    color: white;
+    box-shadow: none;
+    z-index:200px;
+    width:260px;
+    max-height: 300px;
+    overflow: scroll;
+  }
+  .dropdownItem:hover{
+    background-color: rgba(0, 0, 0, 0.947);
+  }
+
+  .dropdownItem {
+    color: white;
+  }
+  
+.loginAndRegister{
+    display:flex;
+    flex-direction: column;
+    gap: 15px; 
+
+}
+
+ .navbar{
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo h1{
+    color: #0c3b2e;
+    font-size: 32px;
+}
+
+.logo span{
+    color: #555;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+ .nav-links a{
+    text-decoration: none;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links a:hover{
+    color: #2f8f46;
+} 
+}

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.features-section{
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 80px 8%;
+
+    background: #f8f8f8;
+}
+
+.features-heading{
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.features-heading h1{
+    font-size: 55px;
+
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+.features-heading p{
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+.features-container{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.feature-card{
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.feature-card:hover{
+    transform: translateY(-10px);
+}
+
+.feature-icon{
+    width: 90px;
+    height: 90px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #f1e8ff;
+
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+.feature-card h2{
+    font-size: 25px;
+
+    color: #222;
+
+    margin-bottom: 15px;
+}
+
+.feature-card p{
+    font-size: 16px;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+    .features-heading h1{
+        font-size: 40px;
+    }
+
+    .features-heading p{
+        font-size: 16px;
+    }
+
+    .feature-card{
+        padding: 25px;
+    }
+}
+
+@media(max-width: 500px){
+
+    .features-section{
+        padding: 60px 5%;
+    }
+
+    .features-heading h1{
+        font-size: 32px;
+    }
+}
